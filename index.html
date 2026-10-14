@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a class="logo" href="#404" data-go="404"><picture>
+          <source media="(prefers-color-scheme: dark)" srcset="logo-dark.png">
+          <img class="logo-image" src="logo.png" alt="Stackly">
+        </picture></a>
+
+      <!-- Menu button -->
+      <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+        <li><a href="#404" data-go="404">Home</a></li>
+        <li><a href="#404" data-go="404">Services</a></li>
+        <li><a href="#404" data-go="404">About</a></li>
+        <li><a href="#404" data-go="404">Products</a></li>
+        <li><a href="#contact" data-go="contact" aria-current="page">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- ===================== CONTACT PAGE ===================== -->
+  <div id="contactView">
+
+    <section class="banner">
+      <h1>Let's talk about your next big idea</h1>
+      <p>Send us a message and a real person will reply within one working day.</p>
+    </section>
+
+    <main class="contact-layout">
+
+      <section class="card">
+        <h2>Send us a message</h2>
+        <p class="card-intro">Tell us what you need and we'll point you to the right team.</p>
+
+        <form id="contactForm" novalidate>
+
+          <div class="topics">
+            <input type="radio" name="topic" id="topic1" class="topic-violet" checked>
+            <label for="topic1">General</label>
+
+            <input type="radio" name="topic" id="topic2" class="topic-pink">
+            <label for="topic2">Services</label>
+
+            <input type="radio" name="topic" id="topic3" class="topic-teal">
+            <label for="topic3">Products</label>
+
+            <input type="radio" name="topic" id="topic4" class="topic-amber">
+            <label for="topic4">Support</label>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" type="text" placeholder="Vivek Datta">
+              <div class="error-message">Enter your name.</div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="vivek@example.com">
+              <div class="error-message">Enter a valid email address.</div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" type="tel" placeholder="+91 98765 43210">
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="How can we help?"></textarea>
+            <div class="error-message">Write at least 10 characters.</div>
+          </div>
+
+          <button class="button" type="submit">Send message</button>
+        </form>
+      </section>
+
+      <aside class="info-column">
+        <a class="tile tile-violet" href="mailto:hello@stackly.example">
+          <span class="tile-icon">✉</span>
+          <div><strong>Email us</strong><span>hello@stackly.example</span></div>
+        </a>
+
+        <a class="tile tile-pink">
+          <span class="tile-icon">☎</span>
+          <div><strong>Call us</strong><span>+91 9876541230</span></div>
+        </a>
+
+        <div class="tile tile-teal">
+          <span class="tile-icon">⌖</span>
+          <div><strong>Visit us</strong><span>12 Market Road, Siddipet, Telangana</span></div>
+        </div>
+
+        <div class="tile tile-amber">
+          <span class="tile-icon">★</span>
+          <div><strong>Quick answers</strong><span>Most replies arrive in under 4 hours</span></div>
+        </div>
+
+        <div class="hours">
+          <strong>Opening hours</strong><br>
+          Mon–Fri 9:00–18:00<br>
+          Sat 10:00–14:00 · Sun closed
+        </div>
+      </aside>
+
+    </main>
+  </div>
+
+
+  <!-- ===================== 404 PAGE ===================== -->
+    <section class="not-found" id="notFoundView" hidden>
+    <span class="circle circle-pink"></span>
+    <span class="circle circle-amber"></span>
+    <span class="circle circle-teal"></span>
+    <span class="circle circle-violet"></span>
+
+    <div class="not-found-number">404</div>
+    <h1>Page not found</h1>
+    <p>The page you're looking for doesn't exist or has been moved. Head back to the contact page to get in touch.</p>
+    <a class="button button-link" href="#contact" data-go="contact">Back to contact</a>
+  </section>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">© 2026 Stackly. All rights reserved.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
